@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File Uplooads</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
     <form action="/upload" method="POST" enctype="multipart/form-data">
-        <input type="file" name="ProfileImage">
-        <input type="file" name="CoverImage">
+        <h1>Upload Your Files</h1>
+        <div class="upload-area" id="upload-area">
+            <p>Drag & Drop your files here</p>
+            <input type="file" name="ProfileImage" id="profileImage" multiple>
+            <input type="file" name="CoverImage" id="coverImage" multiple>
+        </div>
         <button type="submit">Upload</button>
     </form>
+
 </body>
 
 </html>
